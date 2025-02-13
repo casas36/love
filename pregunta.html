@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>-w-</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet"  href="">
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert("Te amo mucho mucho mucho mi niño precioso")
+        }
+
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+        }
+    </script>
+</head>
+<style>
+    body{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.WpoT3sjQVnL9CA8RHTvCuAHaHa&pid=Api&P=0&h=180");
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 70px;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btnSi{
+    border: none;
+    background-color: rgba(36, 177, 123, 0.774);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-top: 25%;
+    margin-right: 10%;
+    margin-left: 35%;
+    border-radius: 10px;
+}
+#btnNo{
+    border: none;
+    background-color: rgba(145, 20, 194, 0.61);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+</style>
+<body>
+    <h1>¿Quieres ser mi San Valentin?</h1>
+    <button type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si">Sipirili</button>
+    <button type="button" id="btnNo" onmouseover="mueveElBoton()" value="No">Noporolo</button>
+</body>
+</html>
